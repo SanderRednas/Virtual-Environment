@@ -1,0 +1,37 @@
+Establishing Our Environment
+Go to the terminal (or Command Prompt on Windows) and change into the directory where you want to store this project. Within that directory, create a new virtualenv to isolate our application dependencies from other Python projects. Running virtualenv with the option --no-site-packages will not include the packages that are installed globally. In order to keep your environment consistent, it’s a good idea to “freeze” the current state of the environment packages. To do this, run: pip freeze > requirements.txt (Or to print in console use pip list). Later it will be easier for a different developer (or you, if you need to re-create the environment) to install the same packages using the same versions: pip install -r requirements.txt
+In cmd:
+
+•	Change dir: Cd Y:\
+
+•	Install virtualenv: Pip install virtualenv
+
+•	Create virtualenv: virtualenv starterbot
+
+•	Activate the virtualenv: Y:\starterbot\Scripts\activate
+
+•	Deactivate the virtualenv: Y:\starterbot\Scripts\deactivate
+
+Set windows environment variable
+In cmd:
+
+•	Set SLACK_BOT_TOKEN=<token>
+
+•	Echo % SLACK_BOT_TOKEN %
+
+In python:
+
+•	import os
+print(os.environ['SLACK_BOT_TOKEN'])
+
+•	Run: python test.py
+
+Work on script using spyder
+In cmd:
+
+•	When in your environment: pip install spyder
+
+•	Run the spyder.exe from the environment folder now
+
+
+
